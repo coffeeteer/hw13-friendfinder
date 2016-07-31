@@ -22,15 +22,15 @@ var peeps = [
     "photo":"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjHsIHBtp7OAhVFHh4KHcydDWgQjRwIBw&url=https%3A%2F%2Fvimeo.com%2F22188636&bvm=bv.128617741,d.dmo&psig=AFQjCNEcLOzWIt_s7aYDuMSJYRWh5Cpl_Q&ust=1470078528301316",
     "scores":[
        5,
-       1,
-       4,
-       4,
-       5,
-       1,
        2,
+       1,
+       1,
        5,
        4,
-       1
+       3,
+       7,
+       3,
+       2
      ]
   },
 
@@ -38,15 +38,15 @@ var peeps = [
     "name":"Jessica James",
     "photo":"https://c1.staticflickr.com/9/8175/7995123062_d268d3c8ee_b.jpg",
     "scores":[
-       5,
-       1,
-       4,
-       4,
-       5,
-       1,
+       3,
+       3,
+       3,
+       3,
        2,
-       5,
        4,
+       5,
+       5,
+       1,
        1
      ]
   },
@@ -55,16 +55,16 @@ var peeps = [
     "name":"Jane Smith",
     "photo":"https://c1.staticflickr.com/9/8514/8349025914_58d7a678bc_b.jpg",
     "scores":[
-       5,
-       1,
-       4,
-       4,
-       5,
-       1,
        2,
-       5,
+       2,
+       2,
+       1,
+       1,
+       1,
        4,
-       1
+       4,
+       4,
+       3
      ]
   }
 
