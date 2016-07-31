@@ -68,12 +68,22 @@ module.exports = function(app){
   
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table 
-  // var newName = '';
-  // var image = '';
+  var newName = '';
+  var image = '';
+  var tDiff = 0;
 
-  // for(var i = peeps.length + 1; i <= 0; i++) {
-  // 	console.log(peeps[i].name);
-  // }
+  for(var i = 0; i < peeps.length; i++) {
+  	console.log(peeps[i].name);
+
+  	for(var j = 0; j < 10; j++){
+  		console.log(peeps[i].scores[j]);
+  		console.log(Math.abs(peeps[i].scores[j] - req.body.scores[j]) );
+
+  		tDiff = tDiff + Math.abs(peeps[i].scores[j] - req.body.scores[j]);
+  		
+  	}
+  	console.log('total difference is ' + peeps[i].name + " is " + tDiff);
+  }
 
 
   peeps.push(req.body);
