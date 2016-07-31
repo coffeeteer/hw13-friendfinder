@@ -31,9 +31,9 @@ module.exports = function(app){
 }*/
 
 
-var friendsData     = require('../data/friends.js');
+var peeps = require('../data/friends.js');
 
-var path      = require('path');
+var path = require('path');
 
 
 
@@ -68,14 +68,24 @@ module.exports = function(app){
   
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table 
-    if(friendsData.length < 5 ){
-      friendsData.push(req.body);
-      res.json(true); // KEY LINE
-    }
+  // var newName = '';
+  // var image = '';
 
-    else{
-      console.log("this is in else of api post");
-    }
+  // for(var i = peeps.length + 1; i <= 0; i++) {
+  // 	console.log(peeps[i].name);
+  // }
+
+
+  peeps.push(req.body);
+  res.json({
+  	
+  	name: "jon", 
+  	photo: "https://tse4.mm.bing.net/th?id=OIP.M503b6462304c539cc2dafd7ee8ff9ea5o0&w=185&h=279&c=8&qlt=90&o=4&pid=1.7"
+  	
+  	}); // KEY LINE
+    
+
+    
 
   });
 
