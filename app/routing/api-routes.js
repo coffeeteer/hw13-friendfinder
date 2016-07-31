@@ -70,27 +70,42 @@ module.exports = function(app){
     // It will do this by sending out the value "true" have a table 
   var newName = '';
   var image = '';
-  var tDiff = 0;
+
+  // to remember the index of the person who has the best score
+  var match = 0;
+  // best score - lowest number wins
+  var matchScore = 1000;
+
 
   for(var i = 0; i < peeps.length; i++) {
   	console.log(peeps[i].name);
+  	var tDiff = 0;
 
   	for(var j = 0; j < 10; j++){
-  		console.log(peeps[i].scores[j]);
-  		console.log(Math.abs(peeps[i].scores[j] - req.body.scores[j]) );
+  		//console.log(peeps[i].scores[j]);
+  		//console.log(Math.abs(peeps[i].scores[j] - req.body.scores[j]) );
 
   		tDiff = tDiff + Math.abs(peeps[i].scores[j] - req.body.scores[j]);
   		
   	}
   	console.log('total difference is ' + peeps[i].name + " is " + tDiff);
+
+  	if(tDiff < matchScore) {
+  		matchScore = tDiff;
+  		match = i;
+  	}
+
   }
 
+  console.log("=========================");
+  console.log("the best person is " + peeps[match].name + " with a score of " + matchScore);
+  console.log("=========================");
 
   peeps.push(req.body);
   res.json({
   	
-  	name: "jon", 
-  	photo: "https://tse4.mm.bing.net/th?id=OIP.M503b6462304c539cc2dafd7ee8ff9ea5o0&w=185&h=279&c=8&qlt=90&o=4&pid=1.7"
+  	name: peeps[match].name, 
+  	photo: peeps[match].photo
   	
   	}); // KEY LINE
     
