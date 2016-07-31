@@ -1,29 +1,73 @@
-// var survey = [
-//   {survey: '1. You want to be ridiculously famous, with people of all walks of life fawning all over you.'},
-//   {survey: '2. You often sing in the shower at the top of your lungs, and the neighbots have complained.'},
-//   {survey: '3. You have close relationship with your family, if "Mom" isn\'t tatooed on your arm you secretly want it.'},
-//   {survey: '4. You would rather have an dependable nine-to-five type job that\'s pays well, rather than the uncertainty of a startup.'},
-//   {survey: '5. You consider yourself a country bumkin and love the fresh air, and open space of country living.'},
-//   {survey: '6. Your ultimate dream is to become a pokemon master, you just gotta catch \'em all!'},
-//   {survey: '7. Healthy eating, exercise, and staying active is esstential to your life.'},
-//   {survey: '8. No one is more social than you are, you\'ll strike up a conversation with strangers on the street.'},
-//   {survey: '9. You hate the news because everything is negative and because you can do nothing to change the course of events.'},
-//   {survey: '10. Your exes eften told you how "clingy" you are.'}
-// ];
 
-{
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     4,
-     5,
-     1,
-     2,
-     5,
-     4,
-     1
-   ]
-}
+var peeps = [
+  {
+    "name":"Jon Snow",
+    "photo":"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwictMzmsp7OAhXDWx4KHV1fCDkQjRwIBw&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGZsorQQT-Hs&bvm=bv.128617741,d.dmo&psig=AFQjCNH9TujF5Ub4iF2X_tEaFvlQUfqrDw&ust=1470078354999856",
+    "scores":[
+       5,
+       1,
+       4,
+       4,
+       5,
+       1,
+       2,
+       5,
+       4,
+       1
+     ]
+  },
+
+  {
+    "name":"Jim Smith",
+    "photo":"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjHsIHBtp7OAhVFHh4KHcydDWgQjRwIBw&url=https%3A%2F%2Fvimeo.com%2F22188636&bvm=bv.128617741,d.dmo&psig=AFQjCNEcLOzWIt_s7aYDuMSJYRWh5Cpl_Q&ust=1470078528301316",
+    "scores":[
+       5,
+       1,
+       4,
+       4,
+       5,
+       1,
+       2,
+       5,
+       4,
+       1
+     ]
+  },
+
+  {
+    "name":"Jessica James",
+    "photo":"https://c1.staticflickr.com/9/8175/7995123062_d268d3c8ee_b.jpg",
+    "scores":[
+       5,
+       1,
+       4,
+       4,
+       5,
+       1,
+       2,
+       5,
+       4,
+       1
+     ]
+  },
+
+  {
+    "name":"Jane Smith",
+    "photo":"https://c1.staticflickr.com/9/8514/8349025914_58d7a678bc_b.jpg",
+    "scores":[
+       5,
+       1,
+       4,
+       4,
+       5,
+       1,
+       2,
+       5,
+       4,
+       1
+     ]
+  }
+
+];
+
+module.exports = peeps;
