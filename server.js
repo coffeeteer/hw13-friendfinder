@@ -1,23 +1,24 @@
 var express = require('express');
+var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
-var handlebars = require('handlebars');
+var PORT = 3000;
+exports.dirname = __dirname;
 
-var exphbs = require('express-handlebars');
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
+console.log(__dirname)
 
-console.log('RUNNING, like Forest');
+// var exphbs = require('express-handlebars');
+// app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+// app.set('view engine', 'handlebars');
+app.use(bodyParser.urlencoded({
+	extended: false
+}));
 
 
-// var fs = require('fs');
+require(__dirname +'/app/routing/html-routes')(app) //used to find routing issues
+require(__dirname +'/app/routing/api-routes')(app)
+app.listen(PORT, function(){
+	console.log('RUNNING, like Forest');
+});
 
-// app.listen(3000);
 
-// fs.readFile('friends.js', function(err, data) {
-// 	if(err) {
-// 		console.log(err, 'error');
-// 	}else{
-// 		console.log('RUNNING, like Forest');
-// 	}	
-// });

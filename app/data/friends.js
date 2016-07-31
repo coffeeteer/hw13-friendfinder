@@ -10,3 +10,20 @@ var survey = [
   {survey: '9. You hate the news because everything is negative and because you can do nothing to change the course of events.'},
   {survey: '10. Your exes eften told you how "clingy" you are.'}
 ];
+
+{
+  "name":"Ahmed",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+     5,
+     1,
+     4,
+     4,
+     5,
+     1,
+     2,
+     5,
+     4,
+     1
+   ]
+}
